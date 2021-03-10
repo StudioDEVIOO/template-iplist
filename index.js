@@ -11,7 +11,7 @@ logger = function(chunk){
             for (let inde = 0; inde < 256; inde++) {
                 for (let ind = 0; ind < 256; ind++) {
                     if (verif(`${index}.${i}.${inde}.${ind}`) == 'error') return ;
-                    else  logger(verif(`${index}.${i}.${inde}.${ind}`))
+                    else  logger(verif(`${index}.${i}.${inde}.${ind}`));console.log(verif(`${index}.${i}.${inde}.${ind}`))
                     
     
                 }
