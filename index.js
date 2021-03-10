@@ -1,6 +1,6 @@
 var ip= "temp"
 var fs = require("fs")
-
+var verif = require ("./ipverif")
 var f= fs.openSync(`./ip.txt`,"a");
 logger = function(chunk){
     
@@ -10,7 +10,7 @@ logger = function(chunk){
         for (let i = 0; i < 256; i++) {
             for (let inde = 0; inde < 256; inde++) {
                 for (let ind = 0; ind < 256; ind++) {
-                    logger(`${index}.${i}.${inde}.${ind}`)
+                    logger(verif(`${index}.${i}.${inde}.${ind}`))
                     console.log(`${index}.${i}.${inde}.${ind}`)
     
                 }
