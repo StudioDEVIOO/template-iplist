@@ -11,4 +11,4 @@ Installer le scipt :
 `npm i fs`<br>
 `node index.js`<br>
 
-/!\ Il faut un bon pc, le script va crée un fichier iplist.txt qui est un très gros fichier.
+/!\ Il faut un bon pc, le script va crée un fichier ip.txt qui est un très gros fichier.
