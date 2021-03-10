@@ -1,6 +1,10 @@
 # Iplist
 ### Outils pour développeurs
 
+Logiciels requis :<br>
+[Node.js](https://nodejs.org/en/)
+[npm](https://www.npmjs.com)
+
 Installer le scipt :
 
 `git clone https://github.com/StudioDEVIOO/template-iplist.git`<br>
