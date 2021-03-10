@@ -1,0 +1,21 @@
+var ip= "temp"
+var fs = require("fs")
+var f= fs.openSync(`./ip.txt`,"a");
+logger = function(chunk){
+    
+    fs.writeSync(f,chunk +`\n`)}
+
+    for (let index = 0; index < 256; index++) {
+        for (let i = 0; i < 256; i++) {
+            for (let inde = 0; inde < 256; inde++) {
+                for (let ind = 0; ind < 256; ind++) {
+                    logger(`${index}.${i}.${inde}.${ind}`)
+                    console.log(`${index}.${i}.${inde}.${ind}`)
+    
+                }
+    
+            }
+    
+        }
+    
+    }
