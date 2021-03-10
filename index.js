@@ -1,5 +1,6 @@
 var ip= "temp"
 var fs = require("fs")
+
 var f= fs.openSync(`./ip.txt`,"a");
 logger = function(chunk){
     
