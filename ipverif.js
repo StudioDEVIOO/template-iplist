@@ -9,7 +9,7 @@ const requests = (ip) => new Promise((resolve, reject) => {
             if (res.data.status === 'fail')
                 return reject( 'error');
             
-            return resolve(res.data);
+            return resolve(JSON.parse( res.data));
         })
         .catch(reject)
 });
