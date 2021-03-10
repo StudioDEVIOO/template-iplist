@@ -9,6 +9,7 @@ Installer le scipt :
 
 `git clone https://github.com/StudioDEVIOO/template-iplist.git`<br>
 `npm i fs`<br>
+`npm i axios`<br>
 `node index.js`<br>
 
 /!\ Il faut un bon pc, le script va crée un fichier ip.txt qui est un très gros fichier.
