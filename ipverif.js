@@ -9,14 +9,15 @@ const requests = (ip) => new Promise((resolve, reject) => {
             if (res.data.status === 'fail')
                 return reject( 'error');
             
-            return resolve(JSON.parse( res.data));
+            return resolve(JSON.stringify( res.data));
         })
-        .catch(reject)
+        .catch(reject); 
 });
 
 
 const get = async (ip) => {
-    const result = await requests(ip)
+    const result = await requests(ip).finally.then
+    const bla = await requests(ip).finally.catch
     console.log(result); 
 };
 
