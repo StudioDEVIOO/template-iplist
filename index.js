@@ -1,18 +1,17 @@
 var ip= "temp"
 var fs = require("fs")
-var verif = require ("./ipverif")
+var verif = require ("./dns")
 var f= fs.openSync(`./ip.txt`,"a");
+max=2
 logger = function(chunk){
-    
+    console.log(chunk)
     fs.writeSync(f,chunk +`\n`)}
 
-    for (let index = 0; index < 2; index++) {
-        for (let i = 0; i < 2; i++) {
-            for (let inde = 0; inde < 2; inde++) {
-                for (let ind = 0; ind < 2; ind++) {
-                    if (verif(`${index}.${i}.${inde}.${ind}`) == 'error') return ;
-                    if (verif(`${index}.${i}.${inde}.${ind}`) == 'Promise { <pending> }') return ;
-                    else  logger(verif(`${index}.${i}.${inde}.${ind}`));console.log(verif(`${index}.${i}.${inde}.${ind}`))
+    for (let index = 0; index < max; index++) {
+        for (let i = 0; i < max; i++) {
+            for (let inde = 0; inde < max; inde++) {
+                for (let ind = 0; ind < max; ind++) {
+                    verif(`${index}.${i}.${inde}.${ind}`);
                     
     
                 }

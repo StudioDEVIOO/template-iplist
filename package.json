@@ -1,0 +1,22 @@
+{
+  "name": "template-iplist",
+  "version": "1.0.0",
+  "description": "se service sert a avoir une grosse base de donné sur les ip ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StudioDEVIOO/template-iplist.git"
+  },
+  "author": "alphaleadership",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StudioDEVIOO/template-iplist/issues"
+  },
+  "homepage": "https://github.com/StudioDEVIOO/template-iplist#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
